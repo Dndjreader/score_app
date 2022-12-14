@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3>HOME</h3>
+                <div class="score-left">
+                    <div id="home-text">0</div>
+                </div>
+                <div id="btn-container">
+                    <button onclick="homeScore(1)" id="homebtn">+1</button>
+                    <button onclick="homeScore(2)" id="homebtn">+2</button>
+                    <button onclick="homeScore(3)" id="homebtn">+3</button>
+                </div>
+            </div>
+            <div>
+                <h3>GUEST</h3>
+                <div class="score-right">
+                    <div id="away-text">0</div>
+                </div>
+                <div id="btn-container">
+                    <button onclick="awayScore(1)"  id="awaybtn">+1</button>
+                    <button onclick="awayScore(2)" id="awaybtn">+2</button>
+                    <button onclick="awayScore(3)" id="awaybtn">+3</button>
+                </div>
+            </div>
+            
+        </div>
+        <div id="reset-container">
+            <button id="resetbtn" onclick="reset()">Reset</button>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>
